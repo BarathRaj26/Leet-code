@@ -10,7 +10,9 @@ class Solution {
 
         StringBuilder result=new StringBuilder();
         for(char c:list){
-            result.append(String.valueOf(c).repeat(map.get(c)));
+            for(int i=0;i<map.get(c);i++){
+                result.append(c);
+            }
         }
         return result.toString();
     }
