@@ -13,11 +13,11 @@ class Solution {
                 arr2.add(nums[i]);
             }
         }
-        arr1.addAll(arr2);
-
-        for(int i=0;i<arr1.size();i++){
-            nums[i]=arr1.get(i);
-        }
-        return nums;
+        int[] resultArray = new int[nums.length];
+        int index = 0;
+        for (int value: arr1) resultArray[index++] = value;
+        for (int value: arr2) resultArray[index++] = value;
+        
+        return resultArray;
     }
 }
