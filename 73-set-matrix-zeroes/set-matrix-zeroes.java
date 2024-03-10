@@ -3,8 +3,8 @@ class Solution {
         int r=matrix.length;
         int c=matrix[0].length;
 
-        int row[]=new int[r];
-        int col[]=new int[c];
+        int[] row=new int[r];
+        int[] col=new int[c];
 
         for(int i=0;i<r;i++){
             for(int j=0;j<c;j++){
